@@ -4,22 +4,22 @@ import {FormsModule} from '@angular/forms'
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { MeuPrimeiroComponent } from './meu-primeiro/meu-primeiro.component';
-import { MeuSegundoComponent } from './meu-segundo/meu-segundo.component';
-import { CursosModule } from './cursos/cursos.module';
+import { PrimeiroComponent } from './primeiro/primeiro.component';
+import { SegundoComponent } from './segundo/segundo.component';
+
 
 @NgModule({
   declarations: [
     AppComponent,
-    MeuPrimeiroComponent,
-    MeuSegundoComponent
+    PrimeiroComponent,
+    SegundoComponent,
+   
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
-    CursosModule
-
+  
   ],
   providers: [],
   bootstrap: [AppComponent]
