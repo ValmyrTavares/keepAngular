@@ -1,3 +1,6 @@
 <h1>Eu sou o pai</h1>
 <p>{{MeuNome}}</p>
 <app-segundo [nome]="MeuNome" ></app-segundo>
+<botao [num]="newNumb" (mudouValor)="onMudouValor($event)"></botao>
+<p>{{showNumber}}</p>
+ 
