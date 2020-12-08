@@ -1,1 +1,23 @@
 <h2 class="detalhe">EU sou o super detalhe do curso</h2>
+<h1>Meu nome é {{name}}</h1>
+<p>O endereço do Rock2you é <a [href]="rock2you">rock2you</a> </p>
+<p>A soma de 23 + 45 é {{23 + 45}}</p>
+<p>O produto de 45 e 45 é {{getValor()}}</p>
+<p>Mostrando uma expressão boleana {{cursoAngular && Curtir()}}</p>
+<img src={{Paris}}/>
+
+    <img [src]="Roma"/>
+    <button (click)='botaoClique()'>Clique</button>
+   
+    <input type="text" (keyup)="nossoInput($event)"
+     (keyup.enter)="SalvarValor(lux.value)"
+     #lux/>
+    
+    
+     <p>{{valorAtual}}</p>
+    <p>{{valorEnter}}</p>
+    
+    <span (mouseover)="EntrouSaiu()"
+    (mouseout)="EntrouSaiu()">
+        <h2 [class.mudaCor] = "mudaStyle">Eu tenho que mudar de cor</h2>
+    </span>
